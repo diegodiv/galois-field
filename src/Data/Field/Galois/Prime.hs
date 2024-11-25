@@ -51,9 +51,6 @@ instance KnownNat p => GaloisField (Prime p) where
   frob = identity
   {-# INLINABLE frob #-}
 
-{-# RULES "Prime.pow"
-  forall (k :: KnownNat p => Prime p) n . (^) k n = pow k n
-  #-}
 
 -------------------------------------------------------------------------------
 -- Group instances

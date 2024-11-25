@@ -68,9 +68,6 @@ instance IrreducibleMonic p k => GaloisField (Extension p k) where
     Nothing -> pow y $ char y
   {-# INLINABLE frob #-}
 
-{-# RULES "Extension.pow"
-  forall (k :: IrreducibleMonic p k => Extension p k) n . (^) k n = pow k n
-  #-}
 
 -------------------------------------------------------------------------------
 -- Group instances

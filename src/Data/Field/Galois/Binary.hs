@@ -52,9 +52,6 @@ instance KnownNat p => GaloisField (Binary p) where
   frob = join (*)
   {-# INLINABLE frob #-}
 
-{-# RULES "Binary.pow"
-  forall (k :: KnownNat p => Binary p) n . (^) k n = pow k n
-  #-}
 
 -------------------------------------------------------------------------------
 -- Group instances
